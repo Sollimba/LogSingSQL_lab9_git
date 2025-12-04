@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".SingupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/signupHeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up\nPoke!"
+            android:textColor="#CE59FD"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/levender_border"
+                android:padding="8dp"
+                android:hint="Email"
+                android:textSize="16sp"
+                android:gravity="center_vertical|start"
+                android:textColor="#B0B0B0"
+                android:drawableLeft="@drawable/ic_outline_alternate_email_24"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/levender_border"
+                android:padding="8dp"
+                android:hint="Password"
+                android:textSize="16sp"
+                android:gravity="center_vertical|start"
+                android:textColor="#B0B0B0"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_baseline_app_blocking_24"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:id="@+id/signup_confirm"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/levender_border"
+                android:padding="8dp"
+                android:hint="Confirm Password"
+                android:textSize="16sp"
+                android:gravity="center_vertical|start"
+                android:textColor="#B0B0B0"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_rounded_assistant_on_hub_24"
+                android:drawablePadding="8dp"/>
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:text="Sign up"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/loginRedirectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:text="Already an user? Login"
+                android:textSize="18sp"
+                android:textColor="#540076"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
